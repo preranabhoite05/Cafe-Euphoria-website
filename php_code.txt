@@ -1,0 +1,22 @@
+<!-- <?php
+    $Name= $_POST['name'];
+    $email= $_POST['email'];
+    $date= $_POST['date'];
+    $time= $_POST['time'];
+    $total_p= $_POST['people'];
+    $request= $_POST['request'];
+
+    $conn= new mysqli('localhost','root','','cafe_euphoria');
+    if ($conn->connect_error){
+        die('Connetion failed: '.$conn->connect_error);
+    }else{
+        echo "In";
+        $stmt= $conn->prepare("insert into reservation (Name,email,Date,Time,people,request) values(?,?,?,?,?,?");
+        $stmt->bind_param("ssssis",$Name,$email,$date,$time,$total_p,$request);
+        $stmt->execute();
+        echo "registration succesfull...";
+        $stmt->close();
+        $conn->close();
+
+    }
+?> -->

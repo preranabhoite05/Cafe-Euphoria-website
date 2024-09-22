@@ -1,0 +1,63 @@
+body, html {
+    height: 100%;
+}
+.container {
+    /* The image used */
+    background-image: url("img/table.jpeg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.form_box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8);
+    color: #f1f1f1;
+    width: 70%;
+    height: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+input[type=text],input[type=date],input[type=time],input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+#request{
+    height: 60px;
+}
+
+#cc{
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  position: absolute;
+  left: 2vw;
+  top: 2vw;
+}

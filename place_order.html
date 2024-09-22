@@ -1,0 +1,168 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <link rel="stylesheet" href="place_order.css">
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <div class="formbox">
+                <h1 style="color:black; text-decoration:double;text-decoration-line: inherit;">Place Order
+                </h1>
+                <form>
+                    <div class="m1">
+                        <input type="text" name="name" id="name" placeholder="name">
+                    </div>
+                    <div class="m2">
+                        <input type="text" name="add" id="add" placeholder="Address">
+                    </div>
+                    <div class="item_list">
+                        <dl>
+                        <dt class="sub_title">Coffee<dt><br>
+                        <dd class="item"><span id="item_name">Espresso</span> <span id="price">200</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Americano</span> <span id="price">150</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Cappuccino</span> <span id="price">220</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Mocha</span> <span id="price">220</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Cafe Latte</span> <span id="price">220</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        </dl>
+                    </div>
+                    <div class="item_list">
+                        <dl>
+                        <dt class="sub_title">OTHERS</dt><br>
+                        <dd class="item"><span id="item_name">Black tea</span> <span id="price">100</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Lemon tea</span><span id="price">50</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Milkshake</span> <span id="price">50</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Hot Chocolate</span> <span id="price">100</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Mineral water</span> <span id="price">25</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        </dl>
+                    </div>
+                    <div class="item_list">
+                        <dl>
+                        <dt class="sub_title">Desserts</dt><br>
+                        <dd class="item"><span id="item_name">Stawberry waffle</span> <span id="price">70</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Brownie</span> <span id="price">80</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Chocolate waffle</span> <span id="price">100</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Cheese cake</span> <span id="price">150</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        <dd class="item"><span id="item_name">Lemon pie</span> <span id="price">60</span><button class="btn"><img width="10" height="10" src="img/btn.png" alt="buttonpng" class="plus" /></button></dd><br>
+                        </dl>
+                    </div>
+                </form>
+            
+
+            </div>
+        </div>
+        <div class="bill">
+            <input type="button" id="button" value=" Place Order ">
+        </div>
+    </center>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="place_order.css">
+</head>
+<body>
+	<div class="container">
+        <img id="cc" src="https://cdn.pixabay.com/photo/2015/10/23/15/51/coffee-1003185__480.jpg">
+        <h1>Place Order</h1>
+		<div class="left-section">
+			<input type="text" id="name" placeholder="Name" required>
+			<input type="text" id="address" placeholder="Address" required>
+			<ul id="menu">
+                <li id="sub_head">Coffee</li>
+				<li>
+					<input type="checkbox" class="item-checkbox" value="200" data-name="Espresso" >
+					<label class="item-name">Espresso - 200</label>
+				</li>
+				<li>
+					<input type="checkbox" class="item-checkbox" value="150" data-name="Americano" >
+					<label class="item-name">Americano - 150</label>
+				</li>
+				<li>
+					<input type="checkbox" class="item-checkbox" value="220" data-name="Cappuccino" >
+					<label class="item-name">Cappuccino - 220</label>
+				</li>
+                <li>
+					<input type="checkbox" class="item-checkbox" value="220" data-name="Mocha" >
+					<label class="item-name">Mocha - 220</label>
+				</li>
+                <li>
+					<input type="checkbox" class="item-checkbox" value="220" data-name="Cafe Latte" >
+					<label class="item-name">Cafe Latte - 220</label>
+				</li>
+                <li id="sub_head">Others</li>
+				<li>
+					<input type="checkbox" class="item-checkbox" value="100" data-name="Black tea">
+					<label class="item-name">Black tea - 100</label>
+				</li>
+				<li>
+					<input type="checkbox" class="item-checkbox" value="50" data-name="Lemon tea" >
+					<label class="item-name">Lemon tea - 50</label>
+				</li>
+				<li>
+					<input type="checkbox" class="item-checkbox" value="50" data-name="Milkshake" >
+					<label class="item-name">Milkshake - 50</label>
+				</li>
+                <li>
+					<input type="checkbox" class="item-checkbox" value="100" data-name="Hot Chocoloate" >
+					<label class="item-name">Hot Chocolate - 100</label>
+				</li>
+                <li>
+					<input type="checkbox" class="item-checkbox" value="25" data-name="Mineral Water" >
+					<label class="item-name">Mineral water - 25</label>
+				</li>
+                <li id="sub_head">Desserts</li>
+				<li>
+					<input type="checkbox" class="item-checkbox" value="70" data-name="Stawberry waffle" >
+					<label class="item-name">Stawberry waffle - 70</label>
+				</li>
+				<li>
+					<input type="checkbox" class="item-checkbox" value="80" data-name="Brownie" >
+					<label class="item-name">Brownie - 80</label>
+				</li>
+				<li>
+					<input type="checkbox" class="item-checkbox" value="100" data-name="Chocolate waffle" >
+					<label class="item-name">Chocolate waffle - 100</label>
+				</li>
+                <li>
+					<input type="checkbox" class="item-checkbox" value="150" data-name="Cheese cake" >
+					<label class="item-name">Cheese cake - 150</label>
+				</li>
+                <li>
+					<input type="checkbox" class="item-checkbox" value="60" data-name="Lemon pie" >
+					<label class="item-name">Lemon pie - 60</label>
+				</li>
+			</ul>
+		</div>
+		<div class="right-section">
+			<table id="bill">
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Quantity</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2">Total</td>
+						<td id="total">0</td>
+					</tr>
+				</tfoot>
+			</table>
+            <button type="submit" class="payment">Payment</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="place_order.js"></script>
+</body>
+</html>
